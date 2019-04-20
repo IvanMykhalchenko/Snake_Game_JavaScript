@@ -1,0 +1,116 @@
+body {
+	background: #aaa;
+}
+
+.snake__wrapper {
+	transform: translate(60%, 5%);
+	width: 600px;
+	height: 360px;
+	border-radius: 10px;
+	position: relative;
+	/* overflow: hidden; */
+	
+}
+.snake__wrapper_green {
+	box-shadow: 0px 0px 14px 2px rgb(117, 245, 79);
+	border: 5px solid rgb(5, 47, 7);
+}
+.snake__wrapper_blue {
+	box-shadow: 0px 0px 14px 2px rgb(174, 101, 216);
+	border: 5px solid rgb(25, 4, 44);
+}
+.snake__wrapper_red {
+	box-shadow: 0px 0px 14px 2px rgb(253, 104, 186);
+	border: 5px solid rgb(65, 6, 30);
+}
+
+.snake__field  {
+	width: 600px;
+	height: 360px;
+	font-size: 0;
+}
+
+.snake__field_square {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	/* opacity: 0.3; */
+}
+
+.snake__field div[class*='green']:nth-child(even) {
+	background: rgb(19, 160, 61)
+}
+.snake__field div[class*='green']:nth-child(odd) {
+	background: rgb(33, 251, 99)
+}
+
+.snake__field div[class*='red']:nth-child(even) {
+	background: rgb(117, 12, 39)
+}
+.snake__field div[class*='red']:nth-child(odd) {
+	background: rgb(240, 68, 148)
+}
+
+.snake__field div[class*='blue']:nth-child(even) {
+	background: rgb(38, 8, 121)
+}
+.snake__field div[class*='blue']:nth-child(odd) {
+	background: rgb(103, 35, 212)
+}
+
+.snake__themes {
+	width: 60px;
+	padding: 20px;
+	position: absolute;
+	left: 295px;
+
+}
+
+.snake__themes div {
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.snake__themes div:hover {
+	cursor: pointer;
+}
+
+.snake__themes_green {
+	background: linear-gradient(rgb(19, 160, 61), rgb(33, 251, 99) )
+}
+
+.snake__themes_blue {
+	background: linear-gradient(rgb(38, 8, 121), rgb(103, 35, 212) )
+}
+
+.snake__themes_red {
+	background: linear-gradient(rgb(117, 12, 39), rgb(240, 68, 148) )
+}
+.snake__square{
+	width:20px;
+	height: 20px;
+	font-size: 0;
+	position: absolute;
+	box-sizing: border-box;
+	z-index: 5;
+	border: 1px solid #fff;
+	transition: all 0.7s linear;
+}
+
+.snake__rules_game {
+	display: none;
+}
+
+.snake__square_copy {
+	width:20px;
+	height: 20px;
+	font-size: 0;
+	position: absolute;
+	box-sizing: border-box;
+	z-index: 5;
+	border: 1px solid #fff;
+	transition: all 0.7s linear;
+	background: #555;
+}
